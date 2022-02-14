@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Страница каталога</title>
+  <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
+  <a class="navigation-logo" href="index.html"> <img alt="Маленький логотип городка Седона" class="header-logo" src=""></a>
   <nav class="navigation">
-    <a class="navigation-logo" href="index.html"> <img alt="Маленький логотип городка Седона" class="header-logo"
-                                                       src=""></a>
     <ul class="navigation-list">
       <li class="navigation-item">
         <a class="navigation-link" href="index.html">Главная</a>
@@ -20,18 +20,18 @@
         <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
       </li>
     </ul>
-    <ul class="navigation-list navigation-user">
-      <li class="navigation-item">
-        <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
-      </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
-      </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Хочу сюда!</a>
-      </li>
-    </ul>
   </nav>
+  <ul class="navigation-list navigation-user">
+    <li class="navigation-item">
+      <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+    </li>
+    <li class="navigation-item">
+      <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
+    </li>
+    <li class="navigation-item">
+      <a class="button navigation-link-user" href="#">Хочу сюда!</a>
+    </li>
+  </ul>
 </header>
 <main class="main-inner">
   <h1 class="inner-title">Гостиницы Седоны</h1>
@@ -46,32 +46,17 @@
     <form action="https://echo.htmlacademy.ru/" class="catalog-filter" method="get">
       <fieldset class="catalog-filter-group">
         <legend class="catalog-filter-title">Инфраструктура:</legend>
-        <ul class="catalog-filter-list">
-          <li class="catalog-filter-item"><label class="control"><input checked class="control-input"
-                                                                        name="pool" type="checkbox">Бассейн
-          </label></li>
-          <li class="catalog-filter-item"><label class="control"><input checked class="control-input"
-                                                                        name="parking" type="checkbox">Парковка
-          </label></li>
-          <li class="catalog-filter-item"><label class="control"><input class="control-input" name="wi-fi"
-                                                                        type="checkbox">Wi-Fi
-          </label></li>
-        </ul>
-      </fieldset>
-      <fieldset class="catalog-filter-group">
+        <label class="control"><input checked class="control-input" name="pool" type="checkbox">Бассейн</label>
+        <label class="control"><input checked class="control-input" name="parking" type="checkbox">Парковка</label>
+        <label class="control"><input class="control-input" name="wi-fi" type="checkbox">Wi-Fi </label>
+
         <legend class="catalog-filter-title">Тип жилья:</legend>
-        <ul class="catalog-filter-list">
-          <li class="catalog-filter-item"><label class="control"><input checked class="control-input"
-                                                                        name="housing-type-group" type="radio"
-                                                                        value="hotel">Гостиница</label>
-          </li>
-          <li class="catalog-filter-item"><label class="control"><input class="control-input" name="housing-type-group"
-                                                                        type="radio" value="motel">Мотель</label></li>
-          <li class="catalog-filter-item"><label class="control"><input class="control-input" name="housing-type-group"
-                                                                        type="radio"
-                                                                        value="apartments">Апартаменты</label></li>
-        </ul>
+        <label class="control"><input checked class="control-input" name="housing-type-group" type="radio"
+                                      value="hotel">Гостиница</label>
+        <label class="control"><input class="control-input" name="housing-type-group" type="radio" value="motel">Мотель</label>
+        <label class="control"><input class="control-input" name="housing-type-group" type="radio" value="apartments">Апартаменты</label>
       </fieldset>
+
       <fieldset class="catalog-filter-price">
         <legend>Стоимость, ₽:</legend>
       </fieldset>
@@ -154,19 +139,19 @@
     </ul>
     <button class="button pagination-show-more">Загрузить ещё</button>
     <ul class="pagination">
-      <li class="pagination-item pagination-current"><a href="#" class="pagination-link">1</a></li>
-      <li class="pagination-item"><a href="#" class="pagination-link">2</a></li>
-      <li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
-      <li class="pagination-item"><a href="#" class="pagination-link">4</a></li>
-      <li class="pagination-item"><a href="#" class="pagination-link">...</a></li>
-      <li class="pagination-item"><a href="#" class="pagination-link">10</a></li>
+      <li class="pagination-item pagination-current"><a class="pagination-link" href="#">1</a></li>
+      <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+      <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+      <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
+      <li class="pagination-item"><a class="pagination-link" href="#">...</a></li>
+      <li class="pagination-item"><a class="pagination-link" href="#">10</a></li>
     </ul>
     <label class="count-card-description" for="count-cards">Гостиниц на странице:</label>
-    <select name="count-cards" id="count-cards">
+    <select id="count-cards" name="count-cards">
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
-      <option value="4" selected>4</option>
+      <option selected value="4">4</option>
       <option value="5">5</option>
     </select>
   </section>
@@ -174,11 +159,9 @@
 <footer class="page-footer">
   <section class="newsletter">
     <h2>Подпишитесь на рассылку</h2>
-    <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <p class="newsletter-comment-inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form action="https://echo.htmlacademy.ru/" class="newsletter-form" method="post">
-      <label for="newsletter-email"><input class="field" id="newsletter-email" name="newsletter-email"
-                                           placeholder="Ваш e-mail"
-                                           required type="email"></label>
+      <label for="newsletter-email"><input class="field" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail" required type="email"></label>
       <button class="button newsletter-button" type="submit">Подписаться</button>
     </form>
   </section>
