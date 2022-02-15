@@ -145,3 +145,7 @@ h3{
   font-size: 18px;
   line-height: 26px;
 }
+.catalog-background{
+  background-image: url("../images/catalog-background.jpg");
+  background-size: 100% auto;
+}
