@@ -1,151 +1,315 @@
 @font-face {
+  font-weight: 400;
   font-family: "PT Sans";
   font-style: normal;
-  font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
+
 @font-face {
+  font-weight: 700;
   font-family: "PT Sans";
   font-style: normal;
-  font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-body{
-  font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  line-height: 26px;
-  font-style: normal;
+
+body {
   color: #000000;
+  font-size: 20px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  line-height: 26px;
+
   background-color: #f2f2f2;
 }
-main, footer{
+
+main,
+footer {
   background-color: #ffffff;
 }
-.page-header{
-  background-color: #ffffff;
+
+.page-header {
   color: #000000;
+
+  background-color: #ffffff;
 }
-.navigation-link{
+
+.navigation-link,
+.button-link,
+.logo-htmlacademy {
   font-weight: 700;
-  text-decoration: none;
   text-align: left;
+  text-decoration: none;
 }
-h2{
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
+
+.contacts-phone-text {
+  color: #000000;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  text-decoration: none;
 }
-h3{
+
+.main-index h2 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-index h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
 }
-.advantages-number{
+
+.advantages-number {
+  color: #333333;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: #333333;
 }
-.advantages-description{
+
+.advantages-description {
+  color: #333333;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: #333333;
-
 }
 
-.button{
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  background-color: #756257;
+.button {
   color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+
+  text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #756257;
 }
-.booking-comment{
+
+.navigation-link-user {
+  line-height: 20px;
+}
+
+.button-detail {
+  line-height: 21px;
+}
+
+.button-status-select {
+  background-color: #83b3d3;
+  line-height: 21px;
+}
+
+.booking-comment {
+  color: #333333;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #333333;
 }
-.booking-link{
+
+.booking-link {
+  color: #ffffff;
+  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  font-weight: 700;
   text-align: center;
-  text-decoration: none;
-  background-color: #756257;
-  color: #ffffff;
   text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #756257;
 }
-.welcome{
-  background-color: #ffffff;
+
+.welcome {
   color: #000000;
-  background-size: 100% auto;
+
+  background-color: #ffffff;
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
+  background-size: 100% auto;
 }
-.welcome-comments{
+
+.welcome-comments {
+  color: #333333;
   font-weight: 400;
   font-size: 22px;
   line-height: 36px;
   text-align: center;
-  color: #333333;
 }
-.newsletter-page{
+
+.newsletter-page {
   background-color: #83b3d3;
-  background-size: 100% auto;
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
+  background-size: 100% auto;
 }
-.newsletter-comment-page{
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
+
+.newsletter-comment-page,
+.newsletter-comment-inner {
   color: #ffffff;
-}
-.newsletter-comment-inner{
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.newsletter-comment-inner {
   color: #333333;
 }
-.newsletter-title-page{
+
+.newsletter-title-page {
+  color: #ffffff;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
 }
-.newsletter-button{
+
+.newsletter-button {
+  color: #ffffff;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+
   background-color: #83b3d3;
 }
-.field{
+
+.field {
   font-size: 18px;
   line-height: 26px;
 }
-.catalog-background{
+
+.catalog-header {
+  color: #ffffff;
+
+  background-color: #83b3d3;
   background-image: url("../images/catalog-background.jpg");
   background-size: 100% auto;
+}
+
+.inner-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.button-submit {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #83b3d3;
+}
+
+.button-reset {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+
+  background-color: transparent;
+}
+
+.result-filter,
+.result-filter-number {
+  color: #000000;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  color: #333333;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.housing-card-item-title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.housing-card-item p {
+  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.housing-card-item-link {
+  text-decoration: none;
+}
+
+.housing-card-type,
+.housing-card-item-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.housing-card-item-rating {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.pagination-show-more {
+  font-size: 20px;
+  line-height: 26px;
+  background: #83b3d3;
+}
+
+.inner-footer h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.count-card-description,
+.count-card-description option {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
 }
