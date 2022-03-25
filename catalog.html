@@ -75,19 +75,63 @@
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
-          <label class="control"><input name="pool" type="checkbox" checked class="control-input">Бассейн</label>
-          <label class="control"><input name="parking" type="checkbox" checked class="control-input">Парковка</label>
-          <label class="control"><input name="wi-fi" type="checkbox" class="control-input">Wi-Fi </label>
+          <label class="control">
+            <input name="pool" type="checkbox" checked class="visually-hidden control-input">
+            <span class="control-mark"></span>
+            <span class="control-label">Бассейн</span>
+          </label>
+          <label class="control">
+            <input name="parking" type="checkbox" checked class="visually-hidden control-input">
+            <span class="control-mark"></span>
+            <span class="control-label">Парковка</span>
+          </label>
+          <label class="control">
+            <input name="wi-fi" type="checkbox" class="visually-hidden control-input">
+            <span class="control-mark"></span>
+            <span class="control-label">Wi-Fi</span>
+          </label>
         </fieldset>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Тип жилья:</legend>
-          <label class="control"><input name="housing-type-group" type="radio" value="hotel" class="control-input" checked>Гостиница</label>
-          <label class="control"><input name="housing-type-group" type="radio" value="motel" class="control-input">Мотель</label>
-          <label class="control"><input name="housing-type-group" type="radio" value="apartments" class="control-input">Апартаменты</label>
+          <label class="control">
+            <input name="housing-type-group" type="radio" value="hotel" class="visually-hidden control-input" checked>
+            <span class="control-mark"></span>
+            <span class="control-label">Гостиница</span>
+          </label>
+          <label class="control">
+            <input name="housing-type-group" type="radio" value="motel" class="visually-hidden control-input">
+            <span class="control-mark"></span>
+            <span class="control-label">Мотель</span>
+          </label>
+          <label class="control">
+            <input name="housing-type-group" type="radio" value="apartments" class="visually-hidden control-input">
+            <span class="control-mark"></span>
+            <span class="control-label">Апартаменты</span>
+          </label>
         </fieldset>
+        <!---- ползунок-->
         <fieldset class="catalog-filter-group">
-          <!--        Здесь позже появится ползунок-->
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+          <div class="range">
+            <div class="range-wrapper-inputs">
+              <label class="catalog-filter-label">
+                <input type="number" class="range-input" value="0" name="min-price">
+              </label>
+              <label class="catalog-filter-label">
+                <input type="number" class="range-input" value="9000" name="max-price">
+              </label>
+            </div>
+            <div class="range-scale">
+              <div class="range-bar" style="left: 0; width: 216px">
+                <button class="range-toggle toggle-min" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </fieldset>
         <div class="button-group">
           <button type="submit" class="button-submit">Применить</button>

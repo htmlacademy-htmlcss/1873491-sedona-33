@@ -130,8 +130,9 @@
       <p class="newsletter-comment-page">Только полезная информация и никакого спама,<br> честное
         бойскаутское!</p>
       <form action="https://echo.htmlacademy.ru/" class="newsletter-form" method="post">
-        <label for="newsletter-email"><input id="newsletter-email" name="newsletter-email" type="email"
-                                             class="field" placeholder="Ваш e-mail" required></label>
+        <label for="newsletter-email">
+          <input id="newsletter-email" name="newsletter-email" type="email" class="field" placeholder="Ваш e-mail" required>
+        </label>
         <button type="submit" class="newsletter-button">Подписаться</button>
       </form>
     </section>
@@ -179,6 +180,39 @@
       </a>
     </div>
   </footer>
+</div>
+<div class="modal-container modal-container-close">
+  <div class="modal modal-hotel-search">
+    <button class="modal-close-button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <section class="modal-content">
+      <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label for="arrival-date" class="arrival-date">
+          <span class="label-modal-inputs">Дата заезда:</span>
+          <input class="field-modal" id="arrival-date" type="month" placeholder="27 апреля 2020">
+        </label>
+        <p class="comment-arrival">Мы не можем отправить вас в прошлое.</p>
+        <label for="departure-date" class="departure-date">
+          <span class="label-modal-inputs">Дата выезда:</span>
+          <input type="month" class="field-modal" id="departure-date" placeholder="1 сентября 2021">
+        </label>
+        <p class="comment-departure">На эти даты есть свободные номера. Пока есть.</p>
+        <div class="modal-container-input">
+          <label for="adults" class="data-person">
+            <span class="label-modal-inputs">Взрослые:</span>
+            <input class="field-modal-persons" type="number" id="adults" value="2">
+          </label>
+          <label for="children" class="data-children">
+            <span class="label-modal-inputs">Дети:</span>
+            <input class="field-modal-persons" id="children" type="number" value="1">
+          </label>
+        </div>
+        <button type="submit" class="modal-submit">Найти</button>
+      </form>
+    </section>
+  </div>
 </div>
 </body>
 </html>
